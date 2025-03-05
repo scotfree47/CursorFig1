@@ -1,0 +1,64 @@
+{
+    "network": {
+        "ports": [
+            22,    // SSH
+            80,    // HTTP
+            443,   // HTTPS
+            3000,  // Development server
+            3001,  // Alternative development server
+            5432   // PostgreSQL
+        ],
+        "protocols": [
+            "tcp",
+            "udp",
+            "http",
+            "https",
+            "ssh"
+        ],
+        "domains": [
+            "github.com",
+            "npmjs.org",
+            "nodejs.org",
+            "amazonaws.com"
+        ]
+    },
+    "applications": {
+        "executables": [
+            "node",
+            "npm",
+            "git",
+            "python",
+            "aws",
+            "curl",
+            "wget"
+        ],
+        "paths": [
+            "/usr/bin",
+            "/usr/local/bin",
+            "/opt/homebrew/bin",
+            "C:\\Program Files",
+            "C:\\Program Files (x86)"
+        ]
+    },
+    "files": {
+        "extensions": [
+            ".js",
+            ".ts",
+            ".jsx",
+            ".tsx",
+            ".json",
+            ".yml",
+            ".yaml",
+            ".md",
+            ".sh",
+            ".ps1"
+        ],
+        "directories": [
+            "src",
+            "config",
+            "scripts",
+            "test",
+            "docs"
+        ]
+    }
+}

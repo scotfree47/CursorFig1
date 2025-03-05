@@ -1,0 +1,76 @@
+{
+    "network": {
+        "ports": [
+            3389,  // RDP
+            5900,  // VNC
+            21,    // FTP
+            23,    // Telnet
+            25,    // SMTP
+            137,   // NetBIOS
+            138,   // NetBIOS
+            139,   // NetBIOS
+            445    // SMB
+        ],
+        "protocols": [
+            "ftp",
+            "telnet",
+            "rdp",
+            "smb"
+        ],
+        "domains": [
+            "*.suspicious.com",
+            "*.malware.com",
+            "*.phishing.com"
+        ]
+    },
+    "applications": {
+        "executables": [
+            "telnet",
+            "ftp",
+            "nc",
+            "ncat",
+            "netcat"
+        ],
+        "paths": [
+            "/tmp",
+            "/var/tmp",
+            "C:\\Windows\\Temp",
+            "C:\\Users\\Public"
+        ]
+    },
+    "files": {
+        "extensions": [
+            ".exe",
+            ".dll",
+            ".bat",
+            ".cmd",
+            ".vbs",
+            ".scr",
+            ".sys"
+        ],
+        "patterns": [
+            "*password*",
+            "*secret*",
+            "*credential*",
+            "id_rsa",
+            "*.pem",
+            "*.key",
+            "*.cert"
+        ]
+    },
+    "security": {
+        "commands": [
+            "chmod 777",
+            "rm -rf /",
+            "format c:",
+            "deltree",
+            "net user administrator"
+        ],
+        "configurations": [
+            "disable_firewall",
+            "disable_selinux",
+            "disable_defender",
+            "allow_root_ssh"
+        ]
+    }
+}
