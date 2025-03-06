@@ -1,0 +1,2752 @@
+➜  v2ray-aws terraform init
+terraform plan
+terraform apply
+
+Initializing the backend...
+Terraform encountered problems during initialisation, including problems
+with the configuration, described below.
+
+The Terraform configuration must be valid before initialization so that
+Terraform can determine which modules and providers need to be installed.
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ The ";" character is not valid. Use newlines to separate arguments
+│ and blocks, and commas to separate items in collection values.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│   27:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 27:
+│   27:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 28:
+│   28: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│   32:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 32:
+│   32:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 33:
+│   33: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 36:
+│   36: mkdir -p v2ray-aws
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ Blocks of type "cd" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ Blocks of type "cd" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 40:
+│   40: read -p "Enter the name for your SSH key pair: " KEY_NAME
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Blocks of type "aws" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Blocks of type "aws" are not expected here.
+╵
+
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 46:
+│   46:     chmod 400 "${KEY_NAME}.pem"
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│   48: else
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 48:
+│   48: else
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│   50: fi
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 50:
+│   50: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│   54: cat > main.tf << 'EOF'
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 56:
+│   56: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 60:
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 61:
+│   61: aws_region = "us-west-2"
+│ 
+│ An argument named "aws_region" is not expected here.
+╵
+
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 61:
+│   61: aws_region = "us-west-2"
+│ 
+│ An argument named "aws_region" is not expected here.
+╵
+
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 62:
+│   62: key_name = "${KEY_NAME}"
+│ 
+│ An argument named "key_name" is not expected here.
+╵
+
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 62:
+│   62: key_name = "${KEY_NAME}"
+│ 
+│ An argument named "key_name" is not expected here.
+╵
+
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 63:
+│   63: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│   71: terraform plan -out=tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+
+╷
+│ Error: Invalid escape sequence
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ The symbol "$" is not a valid escape sequence selector.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│   84: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│   87: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+
+╷
+│ Error: Duplicate output definition
+│ 
+│   on main.tf line 90:
+│   90: output "v2ray_server_ip" {
+│ 
+│ An output named "v2ray_server_ip" was already defined at
+│ main.tf:12,1-25. Output names must be unique within a module.
+╵
+
+╷
+│ Error: Duplicate output definition
+│ 
+│   on main.tf line 90:
+│   90: output "v2ray_server_ip" {
+│ 
+│ An output named "v2ray_server_ip" was already defined at
+│ main.tf:12,1-25. Output names must be unique within a module.
+╵
+
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ The ";" character is not valid. Use newlines to separate arguments
+│ and blocks, and commas to separate items in collection values.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│   27:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 27:
+│   27:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 28:
+│   28: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│   32:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 32:
+│   32:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 33:
+│   33: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 36:
+│   36: mkdir -p v2ray-aws
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ Blocks of type "cd" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 40:
+│   40: read -p "Enter the name for your SSH key pair: " KEY_NAME
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Blocks of type "aws" are not expected here.
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 46:
+│   46:     chmod 400 "${KEY_NAME}.pem"
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│   48: else
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 48:
+│   48: else
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│   50: fi
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 50:
+│   50: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│   54: cat > main.tf << 'EOF'
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 56:
+│   56: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 60:
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 61:
+│   61: aws_region = "us-west-2"
+│ 
+│ An argument named "aws_region" is not expected here.
+╵
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 62:
+│   62: key_name = "${KEY_NAME}"
+│ 
+│ An argument named "key_name" is not expected here.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 63:
+│   63: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│   71: terraform plan -out=tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+╷
+│ Error: Invalid escape sequence
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ The symbol "$" is not a valid escape sequence selector.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│   84: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│   87: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Duplicate output definition
+│ 
+│   on main.tf line 90:
+│   90: output "v2ray_server_ip" {
+│ 
+│ An output named "v2ray_server_ip" was already defined at
+│ main.tf:12,1-25. Output names must be unique within a module.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 21:
+│   21: echo "V2Ray AWS Deployment Script"
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 22:
+│   22: echo "--------------------------"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 25:
+│   25: if ! command -v aws &> /dev/null; then
+│ 
+│ The ";" character is not valid. Use newlines to separate arguments
+│ and blocks, and commas to separate items in collection values.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 26:
+│   26:     echo "AWS CLI not found. Please install it first."
+│   27:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 27:
+│   27:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 28:
+│   28: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 30:
+│   30: if ! command -v terraform &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 31:
+│   31:     echo "Terraform not found. Please install it first."
+│   32:     exit 1
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 32:
+│   32:     exit 1
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 33:
+│   33: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 36:
+│   36: mkdir -p v2ray-aws
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ Blocks of type "cd" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 37:
+│   37: cd v2ray-aws
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 40:
+│   40: read -p "Enter the name for your SSH key pair: " KEY_NAME
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported operator
+│ 
+│   on main.tf line 43:
+│   43: if ! aws ec2 describe-key-pairs --key-names "$KEY_NAME" &> /dev/null; then
+│ 
+│ Bitwise operators are not supported. Did you mean boolean AND ("&&")?
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 44:
+│   44:     echo "Creating new key pair: $KEY_NAME"
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Blocks of type "aws" are not expected here.
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 45:
+│   45:     aws ec2 create-key-pair --key-name "$KEY_NAME" --query 'KeyMaterial' --output text > "${KEY_NAME}.pem"
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 46:
+│   46:     chmod 400 "${KEY_NAME}.pem"
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 47:
+│   47:     echo "Key pair created and saved as ${KEY_NAME}.pem"
+│   48: else
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 48:
+│   48: else
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 49:
+│   49:     echo "Key pair $KEY_NAME already exists in AWS"
+│   50: fi
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 50:
+│   50: fi
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 53:
+│   53: echo "Creating Terraform configuration..."
+│   54: cat > main.tf << 'EOF'
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Invalid character
+│ 
+│   on main.tf line 54:
+│   54: cat > main.tf << 'EOF'
+│ 
+│ Single quotes are not valid. Use double quotes (") to enclose
+│ strings.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 56:
+│   56: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 59:
+│   59: echo "Creating variables file..."
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 60:
+│   60: cat > terraform.tfvars << EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 61:
+│   61: aws_region = "us-west-2"
+│ 
+│ An argument named "aws_region" is not expected here.
+╵
+╷
+│ Error: Unsupported argument
+│ 
+│   on main.tf line 62:
+│   62: key_name = "${KEY_NAME}"
+│ 
+│ An argument named "key_name" is not expected here.
+╵
+╷
+│ Error: Argument or block definition required
+│ 
+│   on main.tf line 63:
+│   63: EOF
+│ 
+│ An argument or block definition is required here. To set an argument,
+│ use the equals sign "=" to introduce the argument value.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 66:
+│   66: echo "Initializing Terraform..."
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 67:
+│   67: terraform init
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 70:
+│   70: echo "Planning deployment..."
+│   71: terraform plan -out=tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 71:
+│   71: terraform plan -out=tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 74:
+│   74: echo "Creating the infrastructure. This may take a few minutes..."
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 75:
+│   75: terraform apply tfplan
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 78:
+│   78: echo "Deployment completed! V2Ray server details:"
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Extraneous label for terraform
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ No labels are expected for terraform blocks.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 79:
+│   79: terraform output v2ray_connection_details
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 81:
+│   81: echo ""
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 82:
+│   82: echo "To connect to your server via SSH:"
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid string literal
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ Template sequences are not allowed in this string. To include a
+│ literal "$", double it (as "$$") to escape it.
+╵
+╷
+│ Error: Invalid escape sequence
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│ 
+│ The symbol "$" is not a valid escape sequence selector.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 83:
+│   83: echo "ssh -i ${KEY_NAME}.pem ubuntu@\$(terraform output -raw v2ray_server_ip)"
+│   84: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 84:
+│   84: echo ""
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 85:
+│   85: echo "Don't forget to install a V2Ray client on your MacBook Pro:"
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 86:
+│   86: echo "brew install --cask v2rayx"
+│   87: echo ""
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 87:
+│   87: echo ""
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Unsupported block type
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ Blocks of type "echo" are not expected here.
+╵
+╷
+│ Error: Invalid block definition
+│ 
+│   on main.tf line 88:
+│   88: echo "Configuration saved in the v2ray-aws directory"
+│ 
+│ A block definition must have block content delimited by "{" and "}",
+│ starting on the same line as the block header.
+╵
+╷
+│ Error: Duplicate output definition
+│ 
+│   on main.tf line 90:
+│   90: output "v2ray_server_ip" {
+│ 
+│ An output named "v2ray_server_ip" was already defined at
+│ main.tf:12,1-25. Output names must be unique within a module.
+╵
+➜  v2ray-aws 
